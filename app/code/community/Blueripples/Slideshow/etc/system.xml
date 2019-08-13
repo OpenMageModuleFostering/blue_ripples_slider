@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <slideshow translate="label" module="slideshow">
+            <label>Ripples Slides Settings</label>
+			<class>slideshow-section</class>
+            <tab>general</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>9999</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+			<groups>
+                <general translate="label">
+                    <label>Basic Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<enable translate="label comment">
+							<label>Enable Slideshow</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>					
+							<sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</enable>
+						<width translate="label comment">
+                            <label>Width Of image</label>
+                            <comment>in px.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </width>
+						<height translate="label comment">
+                            <label>Height Of image</label>
+                            <comment>in px.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>required-entry validate-number</validate>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </height>
+						<pagination translate="label comment">
+							<label>Pagination</label>
+							<comment>enable or disable pagination</comment>		
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pagination>
+						<navigation translate="label comment">
+							<label>Navigation</label>
+							<frontend_type>select</frontend_type>
+							<comment>Select if wish to see the navigation button and pause/play button</comment>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</navigation>
+						<navigation_on_hover translate="label comment">
+							<label>Navigation on Hover</label>
+							<comment>if true the navigation button (prev, next and play/stop buttons) will be visible on hover state only, if false they will be visible always</comment>
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</navigation_on_hover>						
+				        <play_pause translate="label comment">
+							<label>Play/Pause</label>
+							<comment>to display or not the play/pause buttons</comment>
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</play_pause>
+						<pause_on_click translate="label comment">
+							<label>Pause on Click</label>
+							<comment>Select if the animation is to be paused on click or not</comment>
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pause_on_click>
+						<portrait>
+							<label>Use Original image</label>
+							<frontend_type>select</frontend_type>
+							<comment>Select true if you don't want the slides to be cropped</comment>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</portrait>
+						<slide_on>
+							<label>Slide On</label>
+							<frontend_type>select</frontend_type>
+							<comment>decide if the transition effect will be applied to the previous or the next slide</comment>
+                            <source_model>slideshow/source_slideOn</source_model>							
+							<sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</slide_on>
+						<skin>
+							<label>Skin</label>
+							<frontend_type>select</frontend_type>
+							<source_model>slideshow/source_skin</source_model>							
+							<sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</skin>
+						<hover>
+							<label>On Hover Pause</label>
+							<frontend_type>select</frontend_type>
+							<comment>Select if you want to pause on mause hover or not</comment>
+							<source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</hover>	
+						<thumbnails>
+							<label>Thumbnails</label>
+							<frontend_type>select</frontend_type>
+							<source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</thumbnails>						
+                    </fields>
+                </general>
+                <advance translate="label">
+                    <label>Slide Animation Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<time>
+							<label>Time</label>
+							<comment>in milliseconds</comment>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</time>
+				        <trans_period>
+							<label>Passing Over Time</label>
+							<comment>Time between sliding effect (milliseconds)</comment>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</trans_period>
+                        <grid_difference>
+							<label>Grid Difference</label>
+							<comment>to make the grid blocks slower than the slices, this value must be smaller than Passing Over Time</comment>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</grid_difference>
+						<easing translate="label comment">
+							<label>Easing</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_easing</source_model>							
+							<sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</easing>
+						<fx translate="label comment">
+							<label>Select the Effect</label>
+							<frontend_type>multiselect</frontend_type>
+							<comment>Select multiple rows for more than one effect</comment>
+                            <source_model>slideshow/source_fx</source_model>							
+							<sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fx>					
+						<cols>
+							<label>Slide Divide into columns</label>
+							<comment>select the number of columns the slides will be divided into</comment>		
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</cols>
+						<rows>
+							<label>Slide Divide into Rows</label>
+							<comment>select the number of rows the slides will be divided into</comment>		
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>7</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</rows>
+						<sliced_cols>
+							<label>Sliced Columns</label>
+							<comment>if 0 the same value of columns</comment>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</sliced_cols>
+						<sliced_rows>
+							<label>Sliced Rows</label>
+							<comment>if 0 the same value of rows</comment>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number</validate>
+							<sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</sliced_rows> 
+						<opacity_on_grid translate="label comment">
+							<label>Opacity on Grid</label>
+							<comment>Opacity on blocks and slices</comment>
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_trueFalse</source_model>							
+							<sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</opacity_on_grid>	
+                    </fields>
+                </advance>	
+               <loader translate="label">
+                    <label>Loader Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>3</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<loader>
+							<label>Loader</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_loader</source_model>							
+							<sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</loader>						
+						<pie_position>
+							<label>Loader Position</label>
+							<comment>Select the postion for the loader image</comment>							
+							<frontend_type>select</frontend_type>
+                            <source_model>slideshow/source_piePosition</source_model>							
+							<sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</pie_position>						
+						<loader_color>
+							<label>Loader Color</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</loader_color>
+						<loader_bg_color>
+							<label>Loader Background Color</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</loader_bg_color>
+						<loader_opacity>
+							<label>Loader Opacity</label>
+							<frontend_type>text</frontend_type>
+							<validate>required-entry validate-number validate-digits-range digits-range-0-1</validate>
+							<sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</loader_opacity>
+						<loader_stroke>
+							<label>Loader Thickness</label>
+							<frontend_type>text</frontend_type>
+							<comment>The thickness of the pie loader</comment>
+							<validate>required-entry validate-number</validate>
+							<sort_order>6</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</loader_stroke>
+                    </fields>
+                </loader>	
+                <title translate="label">
+                    <label>Title Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>4</sort_order>
+                    <show_in_default>2</show_in_default>
+                    <show_in_website>2</show_in_website>
+                    <show_in_store>2</show_in_store>
+                    <fields>
+						<enable_title translate="label comment">
+							<label>Show Title</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>					
+							<sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</enable_title>					
+						<width_title translate="label comment">
+                            <label>Width Of Title</label>
+                            <comment>in percent in accordance with the image.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>12</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </width_title>
+						<height_title translate="label comment">
+                            <label>Height Of Title</label>
+                            <comment>in percent in accordance with the slide image.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </height_title>
+						<margin_title translate="label comment">
+                            <label>Margin Of Title</label>
+                            <comment>in percent select margin from left.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>14</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </margin_title>							
+						<fx_title translate="label comment">
+							<label>Effect For Title</label>
+							<frontend_type>select</frontend_type>
+							<comment>Select Effect for Title</comment>
+                            <source_model>slideshow/source_fxcontent</source_model>							
+							<sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fx_title>						
+						<title_bg_color>
+							<label>Title Background Color</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>16</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</title_bg_color>
+						<font_color_title>
+							<label>Title Font Color</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>17</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</font_color_title>
+						<font_size_title translate="label comment">
+                            <label>Title Font Size</label>
+                            <comment>in px.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>18</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </font_size_title>	
+						<opacity_title translate="label comment">
+                            <label>Title Opacity</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>19</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </opacity_title>
+						<border_radius_title translate="label comment">
+                            <label>Title Border Radius</label>
+                            <comment>in px.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </border_radius_title>													
+                    </fields>
+                </title>					
+                <description translate="label">
+                    <label>Description Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>5</sort_order>
+                    <show_in_default>2</show_in_default>
+                    <show_in_website>2</show_in_website>
+                    <show_in_store>2</show_in_store>
+                    <fields>
+						<enable_description translate="label comment">
+							<label>Show Description</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>					
+							<sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</enable_description>					
+						<width_description translate="label comment">
+                            <label>Width Of Description</label>
+                            <comment>in percent in accordance with the image.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </width_description>
+						<height_description translate="label comment">
+                            <label>Height Of Description</label>
+                            <comment>in percent in accordance with the slide image.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </height_description>
+						<margin_description translate="label comment">
+                            <label>Margin Of Description</label>
+                            <comment>in percent select margin from left.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </margin_description>						
+						<fx_description translate="label comment">
+							<label>Effect For Description</label>
+							<frontend_type>select</frontend_type>
+							<comment>Select Effect for the Description</comment>
+                            <source_model>slideshow/source_fxcontent</source_model>							
+							<sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </fx_description>						
+						<description_bg_color>
+							<label>Description Background Color</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</description_bg_color>
+						<font_color_description>
+							<label>Description Font Color</label>
+							<frontend_type>text</frontend_type>
+							<validate>color</validate>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</font_color_description>
+						<font_size_description translate="label comment">
+                            <label>Description Font Size</label>
+                            <comment>in px.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </font_size_description>
+						<opacity_description translate="label comment">
+                            <label>Description Opacity</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </opacity_description>
+						<border_radius_description translate="label comment">
+                            <label>Description Border Radius</label>
+                            <comment>in px.</comment>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-number</validate>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>2</show_in_store>
+                        </border_radius_description>												
+                    </fields>
+                </description>					
+			</groups>
+		</slideshow>
+	</sections>
+</config>
