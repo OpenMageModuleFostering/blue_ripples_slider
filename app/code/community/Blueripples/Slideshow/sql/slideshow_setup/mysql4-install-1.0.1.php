@@ -6,8 +6,7 @@ $installer->startSetup();
 
 $installer->run("
 
--- DROP TABLE IF EXISTS {$this->getTable('slideshow')};
-CREATE TABLE {$this->getTable('slideshow')} (
+CREATE TABLE  IF NOT EXISTS {$this->getTable('slideshow')} (
   `slideshow_id` int(11) unsigned NOT NULL auto_increment,
   `title` varchar(255) NOT NULL default '',
   `filename` varchar(255) NOT NULL default '',
