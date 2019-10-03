@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Blue_Ripples_Slider",
+    "name": "OpenMageModuleFostering\/Blue_Ripples_Slider",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "This module allows you to bring slider image any where with a call of a block code.",
     "authors": [
-    {
-        "name": "blueRipples",
-        "email": "support@blueripples.com"
-    }
-],
+        {
+            "name": "blueRipples",
+            "email": "support@blueripples.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
